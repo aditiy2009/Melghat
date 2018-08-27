@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    .row_style{
+    padding-left:400px;
+    }
+    
+    </style>
+       
+        <title>MELGHAT-Login</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/tt2.jpg" />
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+            <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+<script>
+    function validate()
+        {
+            var x= document.forms["myForm"]["email"].value;
+            var y= document.forms["myForm"]["password"].value;
+            if(x ==="" || y==="")
+            {
+                alert("All fields must be specified");
+                return false;
+            }
+          
+                        if(y ==="")
+            {
+                alert("Password must be supplied");
+                return false;
+            }
+        }
+    </script>
+    <style>
+    	body{
+ 	background-color:lightblue;
+ }
+  
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+             <div class="navbar-header">
+             
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  <center>  <a href="#" class="navbar-brand">WELCOME TO MELGHAT FILE TRACKING SYSTEM</a><img src="img/tt2.jpg" width="50" height="50">
+                </center>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    
+                </div>
+            </div>
+        </nav>
+<br><br>
+        <div class="row row_style">
+        <div class="col-xs-6">  
+        <div class="panel panel-default">
+           <div class="panel-heading"><h2>Login</h2></div>
+           <div class="panel-body"><p class="text-warning">Login to check file updates</p>
+               <form name="myForm"  action=login.jsp>
+               <div class="form-group">
+                   Login ID : <input type="text" class="form-control" name="txt" placeholder="Login ID" onsubmit="return validate()">
+               </div>
+               <div class="form-group">
+                   Password: <input type="password" class="form-control" name="pwd" placeholder="Password">
+               </div>
+                   <div class="form-group">
+                   Administrator : <input type="radio" value="admin" name="utype" placeholder="Login ID" onsubmit="return validate()">
+                   Employee : <input type="radio" value="emp"  name="utype" placeholder="Login ID" onsubmit="return validate()">
+                   </div>
+               <button type="Submit" class="btn btn-info btn-lg" onsubmit="return validate()   class="btn btn-primary">Login</button>
+               
+           </form>   
+           </div> 
+
+       </div>
+       </div>
+     </div>
+        
+        <footer>
+            <div class="container" >
+                    <center><p>Copyright © Melghat Tiger. All Rights Reserved | Contact Us: +91 90000 00000
+                        </p></center>
+            </div>
+        </footer>
+    </body>
+</html>
